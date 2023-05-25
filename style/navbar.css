@@ -2,7 +2,7 @@
 
 .navbar{
     background-color: white;
-    height: 60px;
+    height: 55px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -14,7 +14,6 @@
 }
 
 .youtube-logo{
-    /* background-color: lightcoral; */
     width: 200px;
     display: flex;
     align-items: center;
@@ -25,33 +24,80 @@
 .youtube-logo-icon{
     width: 100px;
     margin-left: 30px;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 10px;
     
 }
 
 .search-section{
-    width: 500px;
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .search-bar{
-    width: 380px;
+    max-width: 360px;
     height: 36px;
     border: 1px solid;
     border-style: solid;
     border-color: rgba(201, 201, 201, 0.844);
     box-shadow: inset 0.2px 0.2px 2px rgba(0, 0, 0, 0.116);
     padding-left: 15px;
+    min-width: 40px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
+    position: relative;
+    display: flex;
+    flex: 1;
+
+}
+.toolkit-search{
+    background-color: rgba(36, 36, 36, 0.634);
+    color: white;
+    padding: 4px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+
 }
 
+.search-button:hover .toolkit-search{
+    opacity: 1;
+}
+
+.toolkit-create{
+    background-color: rgba(36, 36, 36, 0.631);
+    color: white;
+    padding: 4px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+
+}
+.upload:hover .toolkit-create{
+    opacity: 1;
+}
 .search-button{
     height: 40px;
     width: 66px;
     margin-left: -1px;
+    margin-right: 10px;
     border-width: 1px;
     border-style: solid;
     border-color: rgba(201, 201, 201, 0.844);
@@ -74,17 +120,21 @@
 
 .feature{
     width: 166px;
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
     display: inline-block;
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
 
 }
 
-
-
+.upload{
+    position: relative;
+    
+}
 
 img{
     width: 24px;
@@ -93,7 +143,9 @@ img{
     
 }
 .my-channel{
-    width: 34px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
     object-fit:cover;
 }
 .notifications{
@@ -112,4 +164,43 @@ img{
     position: absolute;
     top: -3px;
     right: -6px;
+}
+
+.mic{
+
+    background-color: rgb(236, 236, 236);
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voice-serch-icon{
+    height: 24px;
+    position: relative;
+}
+
+.toolkit-mic{
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.56);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    border-radius: 2px;
+    padding: 4px;
+    margin-top: 74px;
+    pointer-events: none;
+    position: absolute;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.mic:hover .toolkit-mic{ 
+    opacity: 1;
+
+
 }
