@@ -1,3 +1,51 @@
 body{
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(242, 242, 242);
+}
+.content{
+
+    margin: 75px 0px 0px 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.creator{
+    height: 320px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    flex: 230px auto;
+    position: relative;
+    
+}
+.thumnail{
+    background-color: lightblue;
+    height: 230px;
+    position: absolutes;
+}
+
+.author{
+    background-color: lightcoral;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+
+
+.channel-logo{
+    background-color: aquamarine;
+    width: 80px;
+}
+
+.channel-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title{
+    background-color:violet;
+    height: 50px;
+    width: 370px;
 }
