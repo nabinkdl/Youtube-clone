@@ -1,0 +1,46 @@
+.box{
+    height: 310px;
+    width: 432px;
+    background-color: rgba(199, 199, 199, 0.544);
+    padding: 4PX;
+    display: grid;
+    grid-template-rows: 240px auto;
+}
+
+.thumbnail{
+ height: 180px;
+ width: 180px;
+}
+
+.creators-thumbnail{
+    height: 240px;
+    width: 430px;
+    object-fit: cover;
+
+}
+.author{
+    /* background-color: lightpink; */
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-gap:10px;
+}
+
+.channel-img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 8px 4px;
+}
+
+.text{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 40px auto;
+    grid-gap: 10px;
+}
+
+.title{
+    background-color: rgba(0, 0, 255, 0.281);
+    font-family: ;
+    font-size: 14px;
+}

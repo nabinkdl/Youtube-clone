@@ -47,9 +47,8 @@ body{
 .video-title{
     background-color:violet;
     display: flex;
-    height: 40px;
     width: 340px;
-    flex: 1;
+    height: 40px;
 }
 
 .author-detail{
