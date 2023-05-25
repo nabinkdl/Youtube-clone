@@ -1,0 +1,44 @@
+.sidebar{
+    width: 68px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Box{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.conatainer{
+
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conatainer:hover{
+    background-color: rgb(231, 229, 229);
+    cursor: pointer;
+}
+
+.icon{
+    height: 20px;
+    margin-bottom: 6px;
+}
