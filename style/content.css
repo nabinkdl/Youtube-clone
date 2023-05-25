@@ -46,6 +46,14 @@ body{
 
 .video-title{
     background-color:violet;
-    height: 50px;
-    width: 370px;
+    display: flex;
+    height: 40px;
+    width: 340px;
+    flex: 1;
+}
+
+.author-detail{
+    background-color: blueviolet;
+    display: flex;
+    flex: 1;
 }
